@@ -1,0 +1,24 @@
+.input {
+  position: relative;
+  input {
+    padding: 10px;
+    outline: none;
+    color: #444444;
+    border: 1px solid #0da2ff;
+    border-radius: 3px;
+  }
+  .placeholder {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    font-size: 14px;
+    padding: 0 5px;
+    color: #0da2ff;
+    transition: 0.3s;
+    pointer-events: none;
+  }
+  input:focus + .placeholder {
+    top: -10px;
+    background-color: #ffffff;
+  }
+}
